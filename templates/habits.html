@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BenFranklin - Weekly Habit</title> <!-- can have a placeholder in title -->
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/css/custom.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        {% block content %}
+          <h2><a href="/">BACK TO COUNT PAGE</a></h2>
+          <h1 class="habits-title">Your 13 habits</h1>
+          <h2 class="habits-rule">Please enter at least 3 habits!</h2>
+          </br>
+          <form method="POST">
+              {{ form.hidden_tag() }}
+              {% for message in get_flashed_messages() %}
+              {{ message }}
+              {% endfor %}
+
+              <div class="groupFields">
+              {{ form.h1.label(class_="label_name") }}<span class="req">*</span></br>
+              {{ form.h1(class_="form-control") }}
+              {{ form.h1_desc.label }}</br>
+              {{ form.h1_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h2.label(class_="label_name") }}<span class="req">*</span></br>
+              {{ form.h2(class_="form-control") }}
+              {{ form.h2_desc.label }}</br>
+              {{ form.h2_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h3.label(class_="label_name") }}<span class="req">*</span></br>
+              {{ form.h3(class_="form-control") }}
+              {{ form.h3_desc.label }}</br>
+              {{ form.h3_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h4.label(class_="label_name") }}</br>
+              {{ form.h4(class_="form-control") }}
+              {{ form.h4_desc.label }}</br>
+              {{ form.h4_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h5.label(class_="label_name") }}</br>
+              {{ form.h5(class_="form-control") }}
+              {{ form.h5_desc.label }}</br>
+              {{ form.h5_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h6.label(class_="label_name") }}</br>
+              {{ form.h6(class_="form-control") }}
+              {{ form.h6_desc.label }}</br>
+              {{ form.h6_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h7.label(class_="label_name") }}</br>
+              {{ form.h7(class_="form-control") }}
+              {{ form.h7_desc.label }}</br>
+              {{ form.h7_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h8.label(class_="label_name") }}</br>
+              {{ form.h8(class_="form-control") }}
+              {{ form.h8_desc.label }}</br>
+              {{ form.h8_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h9.label(class_="label_name") }}</br>
+              {{ form.h9(class_="form-control") }}
+              {{ form.h9_desc.label }}</br>
+              {{ form.h9_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h10.label(class_="label_name") }}</br>
+              {{ form.h10(class_="form-control") }}
+              {{ form.h10_desc.label }}</br>
+              {{ form.h10_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h11.label(class_="label_name") }}</br>
+              {{ form.h11(class_="form-control") }}
+              {{ form.h11_desc.label }}</br>
+              {{ form.h11_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h12.label(class_="label_name") }}</br>
+              {{ form.h12(class_="form-control") }}
+              {{ form.h12_desc.label }}</br>
+              {{ form.h12_desc(class_="form-control") }}
+              </div>
+
+              <div class="groupFields">
+              {{ form.h13.label(class_="label_name") }}</br>
+              {{ form.h13(class_="form-control") }}
+              {{ form.h13_desc.label }}</br>
+              {{ form.h13_desc(class_="form-control") }}
+              </div>
+
+              {{ form.submit(class_="btn") }}
+          </form>
+        {% endblock %}
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,142 @@
+body{
+  margin-top: 20px;
+  background-color: #fff;
+  font-size: 0.625em;
+}
+
+.top-row{
+  margin-top: 20px;
+}
+
+.row{
+    margin-top: 20px;
+}
+
+h2{
+  display: inline-block;
+  font-weight: 200;
+  color: #000;
+  font-size: 2.4em;
+}
+
+p{
+  color: #000;
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+.brand{
+  float: left;
+}
+
+.brand a{
+  color: #D7372C;
+  text-decoration: none;
+}
+
+.habit{
+  float: right;
+}
+
+.col-md-6{
+  margin: auto;
+}
+
+#habitCount{
+  font-size: 50em;
+  color: #D7372C;
+  font-weight: 200;
+  text-align: center;
+}
+
+.days{
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.days p{
+  font-size: 1.4em;
+  color: #bbb;
+  margin-top: 0.5em;
+}
+
+.days .current{
+  font-size: 2.0em;
+  margin-top: 0px;
+  color: #D7372C;
+
+}
+
+#increment{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 1.6em;
+  float: right;
+  margin-top: -40px;
+  margin-right: 20px;
+}
+
+.habit-count-container{
+  margin-top: -20px;
+}
+
+.days{
+  margin-top: 10px
+}
+
+.habits-title{
+  font-size: 4em;
+  color: #D7372C;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 15px;
+}
+
+
+label{
+  font-size: 1.8em;
+  color: #ccc;
+  margin-top: 1.5em;
+  margin-bottom: 0px;
+}
+
+.label_name, .req{
+  font-size: 1.8em;
+  color: #000;
+  margin-top: 1.5em;
+  margin-bottom: 0px;
+}
+
+.form-control{
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+.groupFields{
+  margin: 3em 0px;
+}
+
+textarea{
+  height: 37px;
+}
+
+.btn{
+  border-radius: 2px;
+  border: 1px solid #D7372C;
+  background-color: #fff;
+  color: #D7372C;
+  font-size: 1.8em;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.btn:hover{
+  background-color: #000;
+}

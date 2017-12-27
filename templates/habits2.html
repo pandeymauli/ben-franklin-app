@@ -1,0 +1,16 @@
+{% block content %}
+  <h1>Simple WTF-Form</h1>
+  <form method="POST" action="http://localhost:5000/habits2">
+      {{ form.hidden_tag() }}
+      {% for message in get_flashed_messages() %}
+      {{ message }}
+      {% endfor %}
+      <ul>
+      {% for h in form.habits %}
+        <li>{{ h[0].label }}{{ h[0] }}</li>
+        <li>{{ h[1].label }}{{ h[1] }}</li>
+      {% endfor %}
+      </ul>
+      {{ form.submit() }}
+  </form>
+{% endblock %}
