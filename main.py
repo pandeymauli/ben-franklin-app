@@ -16,9 +16,10 @@ app = Flask(__name__)
 
 basedir = os.path.abspath(os.path.dirname(__file__))    # Path to base directory i.e. directory where this app lives
 app.config['SECRET_KEY'] = 'woir94823wfnslkfjeout9890284qlwkfmsklmvklmqaee3dwm'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/bfdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL') or 'postgresql://localhost/bfdb'
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['HEROKU_ON'] = os.environ.get('HEROKU')
 
 manager = Manager(app)
 db = SQLAlchemy(app)
