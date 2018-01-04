@@ -37,7 +37,7 @@ DAYS_IN_A_WEEK = 7
 NAME_OF_WEEKDAYS = ['S','M','T','W','T','F','S']
 FULLNAME_OF_WEEKDAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 todaysHabitCount = 0
-START_DATE = date(2017, 12, 25)
+START_DATE = date(2018, 1, 4)
 todays_Date = date.today()
 
 class Habit(db.Model):
